@@ -21,9 +21,3 @@ variable "location" {
   description = "The Azure region where all resources in this example should be created"
   default     = ""
 }
-
-variable "administrator_login" {
-  type        = string
-  description = "The PostgreSQL administrator login"
-  default     = "postgresqladmin"
-}

@@ -40,10 +40,13 @@ resource "azurerm_app_service" "application" {
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
 
+    // Monitoring with Azure Application Insights
+    "APPINSIGHTS_INSTRUMENTATIONKEY" = var.azure_application_insights_instrumentation_key
+
     # These are app specific environment variables
     "SPRING_PROFILES_ACTIVE"     = "prod,azure"
 
-    "SPRING_DATASOURCE_URL"      = "jdbc:postgresql://${var.database_url}"
+    "SPRING_DATASOURCE_URL"      = "jdbc:mysql://${var.database_url}?useUnicode=true&characterEncoding=utf8&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
     "SPRING_DATASOURCE_USERNAME" = var.database_username
     "SPRING_DATASOURCE_PASSWORD" = var.database_password
   }

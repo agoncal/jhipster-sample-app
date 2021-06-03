@@ -1,5 +1,9 @@
 # jhipsterSampleApplication
 
+```
+curl "https://nubesgen.com/jhipster-sample-application.tgz?region=francecentral&application=APP_SERVICE.free&runtime=SPRING&database=MYSQL.basic&addons=application_insights&gitops=true" | tar -xzvf -
+```
+
 This application was generated using JHipster 7.0.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.1](https://www.jhipster.tech/documentation-archive/v7.0.1).
 
 ## Development

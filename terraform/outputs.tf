@@ -4,6 +4,6 @@ output "application_hostname" {
 }
 
 output "resource_group" {
-    value       = local.resource_group
-    description = "The resource group."
+  value       = local.resource_group
+  description = "The resource group."
 }

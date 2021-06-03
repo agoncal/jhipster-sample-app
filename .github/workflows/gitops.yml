@@ -95,5 +95,5 @@ jobs:
       - name: 'Deploy to Azure App Service'
         uses: azure/webapps-deploy@v2
         with:
-          app-name: app-demo-2882-0286-9283-1371-${{ env.ENVIRONMENT }}-001
+          app-name: app-jhipster-sample-application-${{ env.ENVIRONMENT }}-001
           package: '*'
